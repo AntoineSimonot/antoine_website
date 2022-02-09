@@ -1,0 +1,68 @@
+.HobbiesContainer{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.MainContainer.Hobbies{
+    width: 85%;
+}
+.HobbiesContainer h1{
+    color: #252A34;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;    
+    margin: 5px 0;
+}
+
+.HobbiesContainer span{
+    font-size: 14px;
+}
+.HobbiesContainer p{
+    font-size: 16px;
+}
+
+.HobbiesContainer .wolfGame{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    margin-top: 0;
+
+}
+
+.wolfImg{
+    width: 100px;
+    z-index: 1;
+}
+
+.wolfContainer{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wolfContainer i{
+    font-size: 26px;
+    color: #08D9D6;
+}
+
+.wolfGame p{
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.textGame{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gameImg{
+    height: 420px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #252A34;
+}

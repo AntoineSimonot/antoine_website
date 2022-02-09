@@ -1,0 +1,106 @@
+
+.ProjectsContainer{
+    width: 80%;
+    min-width: 650px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.ProjectsContainer{
+    font-size: 16px;
+    align-self: flex-start;
+    position: relative;
+}
+
+.ProjectsContainer h1{
+    color: #252A34;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;    
+    margin: 35px 0;
+    display: flex;
+}
+
+.CarouselInfoContainer{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 160px;
+    left: 0px;
+    background: rgba(44, 182, 180, 0.6);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 7.5px;
+    padding-right: 15px;
+} 
+
+.CarouselInfoContainer p {
+    margin: 5px;
+    opacity: 100%;
+
+}
+
+.carousel .slide .legend{
+    background: rgba(8, 217, 214, 0.6);
+    color: white;
+    opacity: 1;
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 25px;
+    width: 70%;
+    margin: 0 auto;
+    margin-left: -35%;
+}
+
+
+.CarouselContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CarouselContainer .CarouselInfo{
+   width: 35%;
+}
+
+.CarouselContainer .CarouselInfo h2{
+    margin-top: 0;
+ }
+
+.CarouselContainer .carousel-root{
+    width: 60%;
+}
+
+.carousel .slide img{
+    height: 400px;
+}
+
+.CarouselInfo h3{
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.CarouselInfo img{
+    width: 30px;
+    height: 29px;
+    margin-top: 1px;
+}
+.CarouselInfo i{
+    color: #08d9d6;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.CarouselInfo .technologies{
+    display: flex;
+}
+
+.carousel .control-dots .dot{
+    box-shadow: none;
+}
+
+.carousel .control-dots .dot.selected{
+    background: #2cb6b4;
+}

@@ -1,23 +1,40 @@
-import './App.css';
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import Footer from './Components/Footer';
+import Nav from './Components/Nav';
+import About from './Pages/About';
+import Experiences from './Pages/Experiences';
+import Contact from './Pages/Contact';
+import Hobbies from './Pages/Hobbies';
+import Home from './Pages/Home';
+import Projects from './Pages/Projects';
+import './Styles/Nav.css';
+import { positions, Provider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
+import { useEffect } from 'react';
+
+const options = {
+  timeout: 3500,
+  position: positions.TOP_RIGHT
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider template={AlertTemplate} {...options}>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experiences" element={<Experiences />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/hobbies" element={<Hobbies />} />
+            <Route path="/contact" element={<Contact />} />
+
+          </Routes>
+          <Nav/>
+          <Footer/>
+        </BrowserRouter>  
+    </Provider>
+
   );
 }
 
