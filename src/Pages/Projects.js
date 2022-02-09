@@ -38,12 +38,6 @@ export default function Projects(){
         }
     ]
 
-    const alert = useAlert();
-
-    useEffect(() => {
-        alert.show("more projects can be found on my github"); 
-    }, []);
-
     return (
         <div className='BodyContainer'>
             <div className="MainContainer">

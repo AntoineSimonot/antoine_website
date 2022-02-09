@@ -35,6 +35,7 @@
 .wolfImg{
     width: 100px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .wolfContainer{
@@ -42,6 +43,7 @@
     width: 450px;
     justify-content: space-between;
     align-items: center;
+    margin: 15px 0;
 }
 
 .wolfContainer i{

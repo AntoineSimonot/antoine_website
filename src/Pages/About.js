@@ -42,7 +42,7 @@ export default function About() {
                       initial={{ opacity: 0,  y: -50 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4,duration: 1, type: "spring", stiffness: 100 }} 
-                    >Outside of programming, I enjoy doing <span>musique</span> and write some <span>stories</span>. I'm also enjoy playing video games a lot.</motion.p>
+                    >Outside of programming, I enjoy making music <span>music</span> and write some <span>stories</span>. I'm also enjoying playing video games a lot.</motion.p>
 
                     <motion.p
                       initial={{ opacity: 0,  y: -50 }}

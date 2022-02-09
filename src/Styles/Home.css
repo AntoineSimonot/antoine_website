@@ -43,6 +43,7 @@
 
 .Home a button:nth-of-type(2) {
     margin-left: 1em;
+
 }
 
 .Home p{
@@ -55,7 +56,8 @@
 
 .Home a button.cvButton{
     border: 1.5px solid #4cb34a;
-    color: #4cb34a;
+    background-color: #4cb34a;
+    color: white;
 }
 
 .presentationTxT{

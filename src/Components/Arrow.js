@@ -18,11 +18,14 @@ export default function Arrow({location}) {
                         transition={{ type:'spring',duration: 0.5, stiffness: 400 }}
                         className="fab fa-github"></motion.i>
                 </a>
-                <a href="https://github.com/AntoineSimonot" target="_blank" rel="noopener noreferrer">
-                    <motion.i 
+                <a href="https://www.fiverr.com/gryphenrn" target="_blank" rel="noopener noreferrer">
+                    <motion.img 
                         whileHover={{ scale: 1.2, originX: 0 }}
                         transition={{ type:'spring',duration: 0.5, stiffness: 400 }}
-                        className="fas fa-file "></motion.i>
+                        src={require('../Img/Fiverr.png')}
+                        >
+                        
+                        </motion.img>
                 </a>
             </div>
             <div className="trait"/>

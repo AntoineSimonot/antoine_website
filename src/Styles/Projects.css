@@ -23,6 +23,10 @@
     display: flex;
 }
 
+.slider-wrapper{
+    cursor: pointer;
+}
+
 .CarouselInfoContainer{
     position: absolute;
     z-index: 1;
@@ -74,6 +78,7 @@
 
 .carousel .slide img{
     height: 400px;
+
 }
 
 .CarouselInfo h3{
@@ -101,4 +106,3 @@
 .carousel .control-dots .dot{
     box-shadow: none;
 }
-

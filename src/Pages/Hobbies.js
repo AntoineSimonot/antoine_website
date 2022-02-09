@@ -1,21 +1,11 @@
-import { animate, motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import React, { useState } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Arrow from '../Components/Arrow';
 import '../Styles/Hobbies.css';
-import { useAlert } from "react-alert";
 
 
 export default function Hobbies(){
-    const alert = useAlert();
 
-    useEffect(() => {
-        alert.show("try to grab the wolf and move it to the left or right"); 
-        setTimeout(() => {
-            alert.error("if the wolf is buggy, try to refresh the page");
-
-        }, 4000);
-    }, []);
 
     const [img, setImg] = useState(1);
     return (
@@ -25,7 +15,8 @@ export default function Hobbies(){
         transition={{ duration: 1 }}>
             <div className="MainContainer Hobbies">
                 <div className='HobbiesContainer'>
-                    <h1>Hobbies </h1>
+                    <h1>Hobbies</h1>
+                    <span>(drag the wolf to the left or to the right to see more projects)</span>
                     <div className='wolfContainer'>
                         <motion.i 
                         animate={{x: [0, -10, 0]}}
@@ -38,7 +29,6 @@ export default function Hobbies(){
                             dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                             dragElastic={1}
                             onDragEnd={ (e)=>{
-                                console.log(e.layerX)
                                 if (e.layerX > 100) {
                                     if (img ===5) {
                                         setImg(1);

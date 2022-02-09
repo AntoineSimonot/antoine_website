@@ -67,7 +67,7 @@ nav li a {
 }
 
 .Navigation li a{
-    font-size: 1.3em;
+    font-size: 1.2em;
     align-items: center;
     text-align: center;
     color: #e7dddd;
@@ -78,7 +78,7 @@ nav li a {
 }
 
 .Navigation li a i {
-    font-size: 1.25em;
+    font-size: 1.2em;
     margin-right: 10px;
     width: 30px;
     color: #f2f2f2;
@@ -87,6 +87,6 @@ nav li a {
 .Navigation li {
     display: flex;
     align-items: center;
-    margin: 12.5px 0;
+    margin: 10px 0;
 }
 

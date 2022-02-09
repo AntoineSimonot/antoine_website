@@ -1,5 +1,4 @@
 .SocialMediaContainer a{
-    margin: 1.5em;
     font-size: 24px;
     color: white;
 }
@@ -26,6 +25,7 @@
 
 .socialMedias a{
     text-decoration: none;
+    margin: 10px 0;
 }
 .socialMedias i{
     margin: 0px 0;
@@ -33,7 +33,25 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-size: 1.2em;
+
 }
+
+.socialMedias i, .socialMedias img{
+    margin: 15px 0;
+
+}
+
+.socialMedias img{
+    margin: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 32px;
+}
+
+
 .trait{
     margin-top: 1.5em;
     width: 2px;
@@ -49,6 +67,3 @@
     color: white;
 }
 
-.SocialMediaContainer img{
-    width: 100px;
-}

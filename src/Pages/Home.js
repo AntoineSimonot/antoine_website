@@ -21,7 +21,7 @@ export default function Home() {
                         <h1>Je suis un étudiant en développement web spécialisé <br></br> en Node.js et en React.js</h1>
                         <p>Actuellement disponible pour un <span>stage de 6 mois à partir d'Avril</span></p>
                         <div className="Actions">
-                            <NavLink to={ "/"}>
+                            <NavLink to={ "/about"}>
                                 <motion.button
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}
@@ -30,7 +30,7 @@ export default function Home() {
                                 </motion.button>
                             </NavLink>
 
-                            <a href={require('../Img/CV.pdf')} download={true}>
+                            <a href={require('../Img/CV_Simonot_Antoine.pdf')} download={true}>
                                 <motion.button
                                     whileHover={{ scale: 1.1 }}
                                     whileTap={{ scale: 0.9 }}

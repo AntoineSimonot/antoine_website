@@ -3,10 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import '../Styles/Contact.css';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-import { useAlert } from 'react-alert';
 
 export default function Contact() {
-    const alert = useAlert();
 
 
     const form = useRef();
@@ -16,7 +14,6 @@ export default function Contact() {
         emailjs.sendForm('gmail', process.env.REACT_APP_TEMPLATE, form.current, process.env.REACT_APP_USER_ID)
           .then((result) => {
               console.log(result.text);
-              alert.success("Your message has been sent"); 
           }, (error) => {
               console.log(error.text);
           });
