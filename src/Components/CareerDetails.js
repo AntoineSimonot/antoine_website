@@ -55,6 +55,10 @@ export default function CareerDetails({show}) {
                     <h2>Front-end <span>@Personnal</span></h2>
                     <p>Feb - Mar 2022</p>
                     <ul>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                            Redux and for Framer motion
+                        </li>
                         <li>
                             <i class="fas fa-chevron-right"></i>
                             Natural referencing (SEO) respecting W3C standards
@@ -67,10 +71,7 @@ export default function CareerDetails({show}) {
                             <i class="fas fa-chevron-right"></i>
                             Creation of the entire design of the website integration of models in responsive design
                         </li>
-                        <li>
-                            <i class="fas fa-chevron-right"></i>
-                            Using reduc for the project and for Framer motion animations
-                        </li>
+                      
                     </ul>
                 </motion.div >
             </div>
