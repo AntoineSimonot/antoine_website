@@ -51,7 +51,6 @@ export default function About() {
                     >If we ever meet I'd love to <span>code</span> for/with you. I am currently looking for a job in the web development field. If you are interested in working with me, please contact me!</motion.p>
 
                 </div>
-                <Arrow location={"/experiences"}></Arrow>
             </div>
         </motion.div>
     )

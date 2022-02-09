@@ -1,23 +1,18 @@
 header{
-    min-width: 300px;
-    width: 30%;
-    height: 100vh;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-right: 2px solid #ccc;
     width: 325px;
-    background-color: #f2f2f2;
 }
 
 nav{
     width: 100%;
-    height: 90%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 nav ul {
@@ -25,7 +20,6 @@ nav ul {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
 }
   
 nav li a {
@@ -40,12 +34,13 @@ nav li a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 70px;
 }
 
 .PhotoContainer h1{
     font-size: 1.8em;
     font-weight: bold;
-    color: #252A34;
+    color: #f2f2f2;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
@@ -53,7 +48,7 @@ nav li a {
 
 .PhotoContainer span{
     font-size: 18px;
-    color: #252A34;
+    color: #f2f2f2;
 }
 
 .Photo{
@@ -69,35 +64,29 @@ nav li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5em;
 }
 
 .Navigation li a{
-    font-size: 1.2em;
+    font-size: 1.3em;
     align-items: center;
     text-align: center;
-    color: #252A34;
+    color: #e7dddd;
 }
 
-.Navigation li a.active{
-    color: #08D9D6;
+.Navigation li a.active, .Navigation li a.active i{
+    color: #4cb34a;
 }
 
 .Navigation li a i {
-    font-size: 1.15em;
+    font-size: 1.25em;
     margin-right: 10px;
     width: 30px;
-    color: #08D9D6;
+    color: #f2f2f2;
 }
 
 .Navigation li {
     display: flex;
     align-items: center;
-    margin: 2.5px 0;
+    margin: 12.5px 0;
 }
 
-.SocialMediaContainer a{
-    margin: 1.5em;
-    font-size: 24px;
-    color: #08D9D6;
-}

@@ -79,20 +79,6 @@ export default function Nav() {
                         <NavLink to={ "/contact"}><i className="fas fa-user"></i>Contact me</NavLink>
                     </motion.li>
                 </ul>
-                <div className='SocialMediaContainer'>
-                    <a href="https://www.linkedin.com/in/simonotantoine/" target="_blank" rel="noopener noreferrer">
-                        <motion.i 
-                            whileHover={{ scale: 1.2, originX: 0 }}
-                            transition={{ type:'spring',duration: 0.5, stiffness: 400 }}
-                            className="fab fa-linkedin-in"></motion.i>
-                    </a>
-                    <a href="https://github.com/AntoineSimonot" target="_blank" rel="noopener noreferrer">
-                        <motion.i 
-                            whileHover={{ scale: 1.2, originX: 0 }}
-                            transition={{ type:'spring',duration: 0.5, stiffness: 400 }}
-                            className="fab fa-github"></motion.i>
-                    </a>
-                </div>
             </motion.nav>
         </header>
         

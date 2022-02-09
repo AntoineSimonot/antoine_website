@@ -19,11 +19,11 @@ export default function CareerDetails({show}) {
                     <ul>
                         <li>
                             <i class="fas fa-chevron-right"></i>
-                            Rated 5* on fiverr
+                            Rated 5* on <span>fiverr</span>
                         </li>
                         <li>
                             <i class="fas fa-chevron-right"></i>
-                            Bug fix on MJML projects and Graphic redesign of a email template
+                            Bug fix on MJML projects and <span>Graphic redesign</span> of a email template
                         </li>
                         <li>                             
                             <i class="fas fa-chevron-right"></i>
@@ -61,7 +61,7 @@ export default function CareerDetails({show}) {
                         </li>
                         <li>
                             <i class="fas fa-chevron-right"></i>
-                            Developed interactive web portfolio for personal training using React.js
+                            Developed interactive web portfolio for personal training using <span>React.js</span>
                         </li>
                         <li>
                             <i class="fas fa-chevron-right"></i>
@@ -101,7 +101,7 @@ export default function CareerDetails({show}) {
                         </li>
                         <li>
                             <i class="fas fa-chevron-right"></i>
-                            Creation of a showcase site for the company Fab'Dépan with HTML, CSS and JS
+                            Creation of a showcase site for the company Fab'Dépan with <span>HTML, CSS and JS</span>
                         </li>
                         <li>
                             <i class="fas fa-chevron-right"></i>
@@ -132,14 +132,14 @@ export default function CareerDetails({show}) {
                               Back office creation</li>
                           <li>
                             <i class="fas fa-chevron-right"></i>
-                            Fullstack Ruby on Rails developer
+                            Fullstack Ruby on <span>Rails developer</span>
                         </li>
                           <li>
                           <i class="fas fa-chevron-right"></i>
 Development of an API and integration of the front</li>
                           <li>
                           <i class="fas fa-chevron-right"></i>
-Using Teams, Git, Trello and Todoist to work as a team</li>
+Using Teams, <span>Git</span>, Trello and Todoist to work as a team</li>
                       </ul>
                   </motion.div >
               </div>

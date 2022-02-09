@@ -4,20 +4,36 @@ import '../Styles/Arrow.css';
 
 export default function Arrow({location}) {
     return (
-        <div className="Arrow">
-            <NavLink to={ location}>
+        <div className='SocialMediaContainer'>
+            <div className='socialMedias'>
+                <a href="https://www.linkedin.com/in/simonotantoine/" target="_blank" rel="noopener noreferrer">
+                    <motion.i 
+                        whileHover={{ scale: 1.2, originX: 0 }}
+                        transition={{ type:'spring',duration: 0.5, stiffness: 400 }}
+                        className="fab fa-linkedin-in"></motion.i>
+                </a>
+                <a href="https://github.com/AntoineSimonot" target="_blank" rel="noopener noreferrer">
+                    <motion.i 
+                        whileHover={{ scale: 1.2, originX: 0 }}
+                        transition={{ type:'spring',duration: 0.5, stiffness: 400 }}
+                        className="fab fa-github"></motion.i>
+                </a>
+                <a href="https://github.com/AntoineSimonot" target="_blank" rel="noopener noreferrer">
+                    <motion.i 
+                        whileHover={{ scale: 1.2, originX: 0 }}
+                        transition={{ type:'spring',duration: 0.5, stiffness: 400 }}
+                        className="fas fa-file "></motion.i>
+                </a>
+            </div>
+            <div className="trait"/>
+            <p>Contact me</p>
+
+            <NavLink to={ "/contact"}>
                 <motion.i 
-                animate={{ x: 10, opacity: 1 }}
-                transition={{
-                    duration: 0.5,
-                    repeat: Infinity,
-                    repeatType: 'reverse',
-                }}
-                whileHover={{ scale: 1.4, originX: 0}}
-                className="fas fa-chevron-right">
-                
-                </motion.i>
-            </NavLink>              
+                transition={{ type:'spring',duration: 0.5, stiffness: 400 }}
+                className="far fa-envelope "></motion.i>
+            </NavLink>
         </div>
+       
     )
 }

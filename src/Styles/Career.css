@@ -7,13 +7,13 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    font-size: 16px;
+    font-size: 18px;
 
 }
 
 
 .CareerContainer h1{
-    color: #252A34;
+    color: white;
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;    
     margin: 35px 0;
@@ -38,30 +38,30 @@
     height: 45px;
     margin: 0; 
     background-color: transparent;
-    border-left: #252A34 solid 1px;
+    border-left: white solid 1px;
     width: 140px;
     text-align: left;
     font-weight: bold;
-    font-size: 16px;
-    color: #252A34;
+    font-size: 18px;
+    color: white;
     cursor: pointer;
-    border-left: solid 1px #08D9D6;
+    border-left: solid 1px #2cb6b4;
     transition: color 0.2s ease-in-out;
 }
 
 .CareerContainer .CareerList .CareerButton.selected {
-    border-left: solid 2px #08D9D6;
+    border-left: solid 2px #4cb34a;
 }
 
 .CareerContainer .CareerList button:hover {
-    color: #08D9D6;
+    color: #4cb34a;
 }
 
 .CareerDetails{
     padding-left: 1.2rem;
 }
 .CareerDetails h2{
-    color: #252A34;
+    color: white;
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -73,11 +73,11 @@
 
 
 .CareerDetails span{
-  color: #08D9D6;
+  color: #4cb34a;
 }
 
 .CareerDetails .CareerDetailsContainer .CareerDetailsContent p{
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 5px;
 }
 
@@ -90,7 +90,7 @@
     position: relative;
     margin-bottom: 15px;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .CareerDetails .CareerDetailsContainer .CareerDetailsContent i{

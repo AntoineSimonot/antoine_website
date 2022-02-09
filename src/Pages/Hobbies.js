@@ -74,7 +74,6 @@ export default function Hobbies(){
                         </div>
                    
                 </div>
-                <Arrow location={"/contact"}></Arrow>
 
             </div>
         </motion.div>

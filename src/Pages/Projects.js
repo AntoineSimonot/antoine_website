@@ -81,10 +81,8 @@ export default function Projects(){
                         <CarouselInfo img={img} text={text}></CarouselInfo>
 
                     </div>
-                    <CarouselTags img={img}></CarouselTags>
                     
                 </motion.div >
-            <Arrow location={"/hobbies"}></Arrow>
             </div>
         </div>
                         

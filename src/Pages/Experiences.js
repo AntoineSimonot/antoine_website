@@ -31,7 +31,6 @@ export default function Experiences() {
 
                     </div>
                 </div>
-                <Arrow location={"/projects"}></Arrow>
             </div>
 
         </motion.div>

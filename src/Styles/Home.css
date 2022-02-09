@@ -8,27 +8,45 @@
 
 .Home{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
-
 .Home h1{
-    color: #252A34;
-    font-size: 2.8em;
+    color: white;
+    font-size: 2.2em;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
+    margin-bottom: 0.2em;
+}
+
+.Home span{
+    font-size: 20px;
+    margin-top: 0;
+    color: f2f2f2;
+    text-decoration: underline;
+    color: #f2f2f2;
 }
 
 .Home a button{
     background-color: transparent;
-    border: 1.5px solid #08D9D6;
+    border: 1.5px solid #4cb34a;
     border-radius: 5px;
-    color: #08D9D6;
+    color: #4cb34a;
     font-size: 1.4em;
     padding: 0.5em;
-    margin: 0.5em;
     cursor: pointer;
+    margin-top: 1em;
+}
+
+.Home a button:nth-of-type(1) {
+    margin-right: 1em;
+}
+
+.Home a button:nth-of-type(2) {
+    margin-left: 1em;
+}
+
+.Home p{
+    font-size: 18px;
 }
 
 .Actions{
@@ -36,16 +54,13 @@
 }
 
 .Home a button.cvButton{
-    border: 1.5px solid #2cb6b4;
-    color: #2cb6b4;
+    border: 1.5px solid #4cb34a;
+    color: #4cb34a;
 }
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter:opacity(60%);
+
+.presentationTxT{
+    text-align: center;
+}
+.HomeContainer img{
+    width: 500px;
 }

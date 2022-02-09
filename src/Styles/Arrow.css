@@ -1,9 +1,54 @@
-.Arrow i{
-    position: absolute;
-    left: 87.5%;
-    font-size: 1.8em;
-    color: #252A34;
-    padding: 0.8em;
-    opacity: 0.2;
+.SocialMediaContainer a{
+    margin: 1.5em;
+    font-size: 24px;
+    color: white;
 }
 
+.SocialMediaContainer > a:last-child i{
+    background: #34b732;
+    border-radius: 64px;
+    font-size: 28px;
+    padding: 13px 13px;
+    transform: rotate(-20deg);
+}
+
+.SocialMediaContainer > a:last-child{
+    margin-top: 10px !important;
+}
+
+.SocialMediaContainer{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.socialMedias a{
+    text-decoration: none;
+}
+.socialMedias i{
+    margin: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.trait{
+    margin-top: 1.5em;
+    width: 2px;
+    height: 80px;
+    background-color: #f2f2f2;
+}
+
+.SocialMediaContainer p{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: 0.8em 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.SocialMediaContainer img{
+    width: 100px;
+}

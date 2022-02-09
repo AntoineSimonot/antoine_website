@@ -11,6 +11,7 @@ import './Styles/Nav.css';
 import { positions, Provider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
 import { useEffect } from 'react';
+import Arrow from './Components/Arrow';
 
 const options = {
   timeout: 3500,
@@ -21,6 +22,7 @@ function App() {
   return (
     <Provider template={AlertTemplate} {...options}>
       <BrowserRouter>
+        <Nav/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -30,8 +32,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
 
           </Routes>
-          <Nav/>
-          <Footer/>
+          <Arrow/>
         </BrowserRouter>  
     </Provider>
 
