@@ -32,7 +32,7 @@ export default function Contact() {
                     <div>
                     <div>
                             <form ref={form} onSubmit={sendEmail}>
-                                    <label>Name:</label>
+                                    <label>Email:</label>
                                     <input placeholder="your email here" type="email" name="email" />
                                     <label>Message:</label>
                                     <textarea placeholder="your message here" name="message" rows="10" cols="50"></textarea>

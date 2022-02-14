@@ -34,7 +34,7 @@ nav li a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 70px;
+    margin-bottom: 1.2em;
 }
 
 .PhotoContainer h1{
