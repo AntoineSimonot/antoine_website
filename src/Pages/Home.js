@@ -18,7 +18,8 @@ export default function Home() {
                      animate={{ opacity: 1 }}
                      transition={{ duration: 1 }}
                         className="Home">
-                        <h1>Je suis un étudiant en développement web spécialisé <br></br> en Node.js et en React.js</h1>
+                        <div className='Photo'/>
+                        <h1>Je suis étudiant en <span>développement web</span> spécialisé <br/> en Node.js et en React.js</h1>
                         <p>Actuellement disponible pour un <span>stage de 6 mois à partir d'Avril</span></p>
                         <div className="Actions">
                             <NavLink to={ "/about"}>

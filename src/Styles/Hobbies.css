@@ -5,7 +5,12 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    overflow-y: auto;
 }
+
+.HobbiesContainer::-webkit-scrollbar {
+    display: none;
+  }
 
 .MainContainer.Hobbies{
     width: 85%;
@@ -66,4 +71,46 @@
     height: 420px;
     width: 600px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1030px)
+{
+    .MainContainer.Hobbies {
+        width: 100%;
+    }
+    .HobbiesContainer{
+        height: 60%;
+    }
+    .HobbiesContainer h1{
+        font-size: 1.5em;
+    }
+    .HobbiesContainer span, .HobbiesContainer span{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .HobbiesContainer .wolfGame{
+        margin: 10px 0;
+    }
+    .wolfImg{
+        width: 80px;
+    }
+    .wolfContainer{
+        width: 80%;
+    }
+    .wolfContainer i{
+        font-size: 20px;
+    }
+    .wolfGame p{
+        margin-top: 0;
+        margin-left: 10px;
+    }
+    .textGame{
+        width: 80%;
+    }
+    .gameImg{
+        height: 300px;
+        width: 100%;
+        border-radius: 0;
+    }
 }

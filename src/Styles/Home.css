@@ -1,6 +1,6 @@
 .HomeContainer{
     height: 100vh;
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +48,7 @@
 
 .Home p{
     font-size: 18px;
+    opacity: 0.8;
 }
 
 .Actions{
@@ -65,4 +66,81 @@
 }
 .HomeContainer img{
     width: 500px;
+}
+
+.Home h1 span {
+    text-decoration: none;
+    color: #4cb34a;
+    font-size: inherit;
+}
+
+.Home .Photo{
+    display: none;
+}
+
+
+@media screen and (max-width: 1030px)
+{
+    .Home .Photo{
+        display: block;
+    }
+
+    .Home h1{
+        font-size: 1.5em;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    .HomeContainer{
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 1030px)
+{
+    .Home{
+        align-items: center;
+        text-align: center;
+    }
+    .Home h1{
+        font-size: 1.2em;
+    }
+
+    h1{
+        font-size: 1.1em;
+    }
+
+    .Home p{
+        font-size: 1em;
+    }
+
+    .Home span{
+        font-size: 0.9em;
+    }
+    
+
+    .HomeContainer{
+        height: auto;
+    }
+
+    .Actions{
+        display: flex;
+        flex-direction: column;
+    }
+    .Home a button{
+        font-size: 1em;
+    }
+
+    
+    .Photo{
+        width: 140px;
+        height: 140px;
+        background-image: url('../Img/Photo.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+    }
 }

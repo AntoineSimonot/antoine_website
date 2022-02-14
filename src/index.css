@@ -18,7 +18,31 @@ code {
 #root{
   display: flex;
   justify-content: space-between;
-  width: 92.5%;
+  width: 85%;
   height: 95%;
   margin: 0 auto;
 }
+
+
+@media screen and (max-width: 1030px) {
+  #root{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: flex-start;
+  }
+
+  .BodyContainer {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MainContainer{
+    height: 100%;
+  }
+}
+

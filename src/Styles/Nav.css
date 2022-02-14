@@ -1,15 +1,15 @@
 header{
-    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 325px;
+    transition: 0.5s;
+    min-width: 230px;
 }
 
 nav{
     width: 100%;
-    height: 85%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,7 +38,6 @@ nav li a {
 }
 
 .PhotoContainer h1{
-    font-size: 1.8em;
     font-weight: bold;
     color: #f2f2f2;
     margin-bottom: 10px;
@@ -87,6 +86,117 @@ nav li a {
 .Navigation li {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    margin: 5px 0;
 }
+
+.burger{
+    display: none;
+    margin-bottom: 1.2em;
+}
+
+#burger{
+    display: none;
+}
+
+
+@media screen and (max-width: 1030px)
+{
+    
+    #burger{
+        display: block;
+    }
+        
+    header{
+        height: 100%;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 1;
+        background-color: #4cb34af5;
+    }
+
+    header .hide-nav{
+        display: none !important;
+    }
+
+    header .show-nav{
+        display: block !important;
+    }
+
+    header.false {
+        background-color: transparent;
+    }
+
+    .show-nav {
+        display: none;
+    }
+
+    #burger i,
+    #burger i::before,
+    #burger i::after{
+        display: block;
+        width: 40px;
+        height: 3px;
+        position: relative;
+        border-radius: 3px;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #burger i::before,
+    #burger i::after {
+        content: '';
+        position: absolute;
+        left: 0;
+    }
+
+   
+    #burger i::after {
+        transform: translateY(12px);
+    }
+
+    #burger i::before
+    {
+        transform: translateY(-12px);   
+    }
+
+       
+    .show-burger #burger i::after {
+        transform: rotate(-45deg) 
+    }
+
+    .show-burger  #burger i::before
+    {
+        transform: rotate(45deg) 
+    }
+
+    .show-burger #burger i
+    {
+        width: 0;
+       background: transparent;
+    }
+
+    nav{
+      align-items: flex-start;
+    }
+    nav .PhotoContainer{
+      display: none;
+    }
+
+    .burger{
+        display: block;
+      list-style: none;
+      font-size: 24px;
+      padding-left: 20px;
+      justify-self: flex-start;
+    }
+
+    
+    .Navigation li a.active, .Navigation li a.active i{
+      color: #041a24;
+    }
+    
+
+}
+
+
 

@@ -1,14 +1,11 @@
 .AboutContainer{
-    height: 100vh;
-    width: 60%;
+
+    width: 80%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-}
-
-.AboutContainer{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .AboutContainer h1{
@@ -19,3 +16,20 @@
     font-weight: bold;
     font-size: 1.1em;
 }
+
+@media screen and (max-width: 1030px)
+{
+    
+    .AboutContainer{
+        height: 60%;
+        margin-top: 3em;
+    }
+    .AboutContainer p{
+        font-size: 14px;
+    }
+
+    .AboutContainer p {
+        margin-top: 0;
+    }
+}
+    

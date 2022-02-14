@@ -16,7 +16,7 @@
 
 .ContactContent{
     display: flex;
-    width: 100%;
+    width: 80%;
 }
 
 .MapContainer{
@@ -104,4 +104,42 @@ form input[type="submit"] {
     padding: 0.5em 1em;
     cursor: pointer;
     margin: 0;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .ContactContent {
+        width: 100%;
+    }
+
+    form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contacts{
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .contact{
+        margin: 0;
+        word-wrap: break-word;
+        min-width: 100px;
+    }
+
+    .contact p{
+        font-size: 12px;
+    }
+
+    .contact i{
+        display: none;
+    }
+
+    .contact p{
+        display: flex;
+        flex-direction: column;
+    }
+
 }

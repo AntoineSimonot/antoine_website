@@ -1,19 +1,20 @@
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import Typed from 'react-typed';
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { useAlert } from "react-alert";
 import { useEffect } from "react";
+import NavigateComponent from './NavigateComponent';
 
 export default function Nav() {
-    const alert = useAlert();
+    const [burger, setBurgerOpen] = useState(false);
 
-    useEffect(() => {
-        alert.show("Welcome on my website!");
-    }, []);
+    const handleShowBurger = () => {
+        setBurgerOpen(!burger);
+    }
 
     return(
-        <header>
+        <header className={burger.toString()}>
             <motion.nav
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1}}
@@ -30,55 +31,22 @@ export default function Nav() {
                         />
                     </div>
                 </div>
-                <ul className="Navigation">
-                    <motion.li
-                        initial={{  x: -30 }}
-                        animate={{  x: 0 }}
-                        whileHover={{ scale: 1.2, originX: 0 }}
-                        transition={{ type:'spring',duration: 0.5, stiffness: 100 }}
-                    >
-                        <NavLink to={ "/"}><i className="fas fa-home"></i>Home</NavLink>
+                <ul className={ burger ? "Navigation nav show-burger" : "Navigation hide-burger"}>
 
-                    </motion.li>
-                    <motion.li
-                        initial={{ x: -30 }}
-                        animate={{ x: 0 }}
-                        whileHover={{ scale: 1.2, originX: 0 }}
-                        transition={{ type:'spring',duration: 0.5, stiffness: 100 }}
-                    >
-                        <NavLink to={ "/about"}><i className="fas fa-user"></i>About me</NavLink>
-                    </motion.li>
-                    <motion.li  
-                        initial={{ x: -30 }}
-                        animate={{ x: 0 }}
-                        whileHover={{ scale: 1.2, originX: 0 }}
-                        transition={{ type:'spring',duration: 0.5, stiffness: 100 }}>
-                        <NavLink to={ "/experiences"}><i className="fas fa-book"></i>Experiences</NavLink>
-                    </motion.li>
+                <NavigateComponent to="/" i="burger" text="" handleShowBurger={handleShowBurger} burger={burger}></NavigateComponent>
 
+                <div className={ burger ? "nav show-nav" : "hide-nav"}> 
+                    <NavigateComponent to="/" i="fas fa-home" text="Home" handleShowBurger={handleShowBurger} burger={burger}></NavigateComponent>
+                    <NavigateComponent to="/about" i="fas fa-user" text="About me" handleShowBurger={handleShowBurger} burger={burger}></NavigateComponent>
+                    <NavigateComponent to="/experiences" i="fas fa-book" text="Experiences" handleShowBurger={handleShowBurger} burger={burger}></NavigateComponent>
+                    <NavigateComponent to="/projects" i="fas fa-code" text="Projects" handleShowBurger={handleShowBurger} burger={burger}></NavigateComponent>
+                    <NavigateComponent to="/hobbies" i="fas fa-laptop-code" text="Hobbies" handleShowBurger={handleShowBurger} burger={burger}></NavigateComponent>
+                    <NavigateComponent to="/contact" i="fas fa-user" text="Contact me" handleShowBurger={handleShowBurger} burger={burger}></NavigateComponent>
+                </div>
+                    
+                   
 
-                    <motion.li  
-                        initial={{ x: -30 }}
-                        animate={{ x: 0 }}
-                        whileHover={{ scale: 1.2, originX: 0 }}
-                        transition={{ type:'spring',duration: 0.5, stiffness: 100 }}>
-                        <NavLink to={ "/projects"}><i className="fas fa-code"></i>Projects</NavLink>
-                    </motion.li>
-                    <motion.li  
-                        initial={{ x: -30 }}
-                        animate={{ x: 0 }}
-                        whileHover={{ scale: 1.2, originX: 0 }}
-                        transition={{ type:'spring',duration: 0.5, stiffness: 100 }}>
-                        <NavLink to={ "/hobbies"}><i className="fas fa-laptop-code"></i>Hobbies</NavLink>
-                    </motion.li>
-                    <motion.li  
-                        initial={{ x: -30 }}
-                        animate={{ x: 0 }}
-                        whileHover={{ scale: 1.2, originX: 0 }}
-                        transition={{ type:'spring',duration: 0.5, stiffness: 100 }}>
-                        <NavLink to={ "/contact"}><i className="fas fa-user"></i>Contact me</NavLink>
-                    </motion.li>
-                </ul>
+                </ul> 
             </motion.nav>
         </header>
         

@@ -76,11 +76,6 @@
     width: 60%;
 }
 
-.carousel .slide img{
-    height: 400px;
-
-}
-
 .CarouselInfo h3{
     color: white;
     margin-bottom: 15px;
@@ -105,4 +100,67 @@
 
 .carousel .control-dots .dot{
     box-shadow: none;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .ProjectsContainer{
+        align-items: center;
+    }
+    .ProjectsContainer h1{
+        text-align: center;
+    }
+    .CarouselContainer{
+        width: 80%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .CarouselContainer .carousel-root{
+        width: 100%;
+    }
+    .CarouselContainer .CarouselInfo{
+        width: 100%;
+    }
+
+    .CarouselContainer .CarouselInfo h2{
+        margin-top: 10px;
+    }
+    .CarouselInfo p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1030px)
+{
+    .ProjectsContainer{
+        width: 100%;
+        min-width: 0;
+        height: 70%;
+        align-self: center;
+    }
+
+    .CarouselContainer{
+        width: 100%;
+    }
+
+    .CarouselContainer .CarouselInfo{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+
+    .CarouselInfo p{
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    h2:nth-of-type(2) {
+        font-size: 14px;
+    }
+
 }

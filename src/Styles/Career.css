@@ -96,3 +96,70 @@
 .CareerDetails .CareerDetailsContainer .CareerDetailsContent i{
     margin-right: 10px;
 }
+
+@media screen and (max-width: 1280px)
+{
+    .CareerDetails .CareerDetailsContainer .CareerDetailsContent li{
+        font-size: 14px;
+    }
+
+    .CareerContainer .CareerList button{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 1030px)
+{
+    .CareerContainer{
+        width: 80%;
+        align-items: center;
+        height: 70%;
+        justify-content: center; 
+        min-width: 0;
+    }
+    .CareerContent{
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+
+    }
+
+    .CareerContainer .CareerList{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .CareerContainer .CareerList button {
+        border-top: solid 2px white;
+        border-left: none;
+        padding: 0;
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .CareerContainer .CareerList .CareerButton.selected {
+        border-top: solid 2px #4cb34a;
+        border-left: none;
+    }
+    
+    .CareerDetails{
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .CareerDetails .CareerDetailsContainer .CareerDetailsContent ul{
+        width: 100%;
+    }
+    .CareerDetailsContent{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+    
